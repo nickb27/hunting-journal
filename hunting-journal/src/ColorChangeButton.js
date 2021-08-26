@@ -1,8 +1,9 @@
 import React from 'react';
 
-function CollorChangeButon() {
+function CollorChangeButon(props) {
+  console.log(props)
   return (
-    <button>Hi!</button>
+    <button className={props.color} onClick={() => props.setColor(props.color)}>{props.color}</button>
   )
 }
 
